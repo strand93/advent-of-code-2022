@@ -45,7 +45,7 @@ public class Program
             if (!tempMarker.Add(value))
             {
                 return false;
-            };
+            }
         }
         
         return true;
