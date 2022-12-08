@@ -63,11 +63,11 @@ public class Parser
         {
             var parsed2D = new int[lines.Count, lines[0].Length];
 
-            for (var i = 0; i < lines.Count; i++)
+            for (var row = 0; row < lines.Count; row++)
             {
-                for (var j = 0; j < lines[i].Length; j++)
+                for (var column = 0; column < lines[row].Length; column++)
                 {
-                    parsed2D[i, j] = int.Parse(lines[i][j].ToString());
+                    parsed2D[row, column] = int.Parse(lines[row][column].ToString());
                 }
             }
 
